@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="crypto, currency, wallet, security, trading" />
+  <meta name="description" content="Finexo - Your trusted partner in secure and efficient cryptocurrency trading." />
+  <meta name="author" content="Finexo Team" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="">
+
+  <title> savoir plus ele </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+
+</head>
+<style>
+
+    /* Styles par défaut (pour grands écrans - desktop) */
+    .section_subtitle {
+    font-size: 1.5rem; /* Taille par défaut pour les grands écrans */
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+
+    .section_text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    }
+
+    .heading_container h2 {
+    font-size: 2rem; 
+    }
+
+    .detail-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    }
+
+    /* Media queries pour les tablettes (écrans moyens) */
+    @media (max-width: 1024px) {
+    .section_subtitle {
+        font-size: 1.4rem; /* Légèrement plus petit pour tablettes */
+    }
+
+    .section_text {
+        font-size: 1.1rem; 
+    }
+
+    .heading_container h2 {
+        font-size: 1.8rem;
+    }
+
+    .detail-box h3 {
+        font-size: 1.6rem;
+    }
+    }
+
+    /* Media queries pour les petits écrans (mobiles) */
+    @media (max-width: 768px) {
+    .section_subtitle {
+        font-size: 1.2rem; /* Encore plus petit pour mobiles */
+    }
+
+    .section_text {
+        font-size: 1rem;
+    }
+
+    .heading_container h2 {
+        font-size: 1.6rem;
+    }
+
+    .detail-box h3 {
+        font-size: 1.4rem;
+    }
+    }
+
+    /* Media queries pour les très petits écrans (téléphones compactes) */
+    @media (max-width: 480px) {
+    .section_subtitle {
+        font-size: 1rem; /* Taille plus petite pour les très petits écrans */
+    }
+
+    .section_text {
+        font-size: 0.9rem; 
+    }
+
+    .heading_container h2 {
+        font-size: 1.4rem;
+    }
+
+    .detail-box h3 {
+        font-size: 1.2rem;
+    }
+    }
+
+</style>
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="{{ url_for('static', filename='images/a11.png') }}" alt="Hero Background">
+      </div>
+    </div>
+
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{{ url_for('home') }}">
+            <span>
+              MUTANDA IHEMBA Growing
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('home') }}">Accueil </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">À propos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('service') }}">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('why_us') }}">Pourquoi Nous Choisir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <!-- slider section -->
+      <section class="slider_section ">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Première diapositive -->
+            <div class="carousel-item active">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6 ">
+                    <div class="detail-box">
+                      <h1>Elevage et Commercialisation Avicole<br></h1>
+                      <p style="text-align: justify;">
+                        Nous sommes spécialisés dans l’élevage et la commercialisation de volailles, offrant des produits de haute qualité pour les marchés locaux et internationaux. Notre approche repose sur des techniques d'élevage modernes et durables, assurant le bien-être des animaux tout en maximisant la production. Nous nous engageons à fournir des œufs et des volailles sains, répondant aux normes de qualité les plus strictes.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="static/images/s3.png" alt="Slider Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deuxième diapositive -->
+            <div class="carousel-item">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6 ">
+                    <div class="detail-box">
+                      <h1>Production d'œufs et de volailles, ainsi que leur Commercialisation<br></h1>
+                      <p style="text-align: justify;">
+                        Élevage de poules pondeuses et de volailles destinées à la consommation. Vente de nos produits en gros et au détail, avec un service de distribution rapide et fiable.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="static/images/s2.png" alt="Crypto Services">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Troisième diapositive (ajoutée) -->
+            <div class="carousel-item">
+              <div class="container ">
+                <div class="row">
+                  <div class="col-md-6 ">
+                    <div class="detail-box">
+                      <h1>Conseil en gestion d'élevage <br></h1>
+                      <p style="text-align: justify;">
+                        Nous accompagnons les fermes et les entrepreneurs dans l’optimisation de leurs activités avicoles, en partageant notre expertise en matière de gestion d’élevage.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="img-box">
+                      <img src="static/images/s6.png" alt="Engagement Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Indicateurs de carrousel (ajouter un nouvel indicateur pour la troisième diapositive) -->
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li> <!-- Nouvel indicateur pour la troisième diapositive -->
+          </ol>
+        </div>
+      </section>
+      <!-- end slider section -->
+
+    </div>
+    <!-- plus3 section -->
+    <section class="about_section layout_padding">
+        <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+            <span>Elevage et Commercialisation Avicole</span>
+            </h2>
+        </div>
+        
+        <div class="content_section">
+            <p class="section_subtitle">
+                <strong>Production d'œufs et de volailles</strong>
+            </p>
+        
+            <p class="section_text">
+                <strong>Élevage de poules pondeuses et de volailles destinées à la consommation</strong> : Nous offrons des produits de haute qualité, issus de notre élevage de poules pondeuses pour la production d'œufs, ainsi que de volailles destinées à la consommation. Nos pratiques d'élevage respectent les standards de l'industrie pour garantir la sécurité et la fraîcheur des produits.
+            </p>
+        
+            <p class="section_subtitle">
+                <strong>Commercialisation</strong>
+            </p>
+        
+            <p class="section_text">
+                Vente de nos produits en gros et au détail, avec un service de distribution rapide et fiable. Nous assurons que nos produits soient livrés en parfait état et dans les délais. Contactez-nous pour plus de détails sur la disponibilité et les modalités d'achat.
+            </p>
+        
+            <p class="section_subtitle">
+                <strong>Conseil en gestion d'élevage</strong>
+            </p>
+        
+            <p class="section_text">
+                Nous accompagnons les fermes et les entrepreneurs dans l’optimisation de leurs activités avicoles, en partageant notre expertise en matière de gestion d’élevage. Que vous soyez débutant ou expérimenté dans le domaine, nous proposons des conseils personnalisés pour améliorer la productivité de vos élevages.
+            </p>
+        
+            <p class="section_text">
+                <em>Pour plus de précisions sur les prix et nos offres, nous vous invitons à nous contacter.</em>
+            </p>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-md-6">
+            <div class="img-box">
+                <img src="{{ url_for('static', filename='images/s6.png') }}" alt="About Us">
+            </div>
+            </div>
+            
+            <div class="col-md-6">
+            <div class="detail-box">
+                <h3>Contactez-nous pour négocier le prix et la durée d'exécution</h3>
+                <p class="section_text">
+                Nous comprenons que chaque projet est unique. C'est pourquoi nous vous invitons à nous contacter pour discuter de vos besoins spécifiques. Nous sommes flexibles sur le prix et la durée d'exécution afin de vous offrir une solution adaptée à vos attentes et à votre budget.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end plus3 section -->
+    
+
+<!-- info section -->
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <!-- Colonne pour l'adresse et les informations de contact -->
+      <div class="col-md-6 info_col">
+        <div class="info_contact">
+          <h4>Adresse</h4>
+          <div class="contact_link_box">
+            <a href="https://www.google.com/maps/place/Kolwezi/@-10.7239231,25.4979801,13z/data=!3m1!4b1!4m6!3m5!1s0x1979e57971072e4f:0xa23ff3e3cd0d2277!8m2!3d-10.7275273!4d25.5088914!16zL20vMDR0Y2Zs?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Kolwezi, Lualaba, RDC</span>
+            </a>
+          </div>
+          <!-- Contact téléphonique et email -->
+          <div class="contact_link_box">
+            <a href="tel:+243816069861">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+243 81 60 69 861</span>
+            </a>
+            <a href="tel:+243995529657">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+243 99 55 29 657</span>
+            </a>
+            <a href="mailto:lightmutanda@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>lightmutanda@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <!-- Réseaux sociaux -->
+        <div class="info_social">
+          <a href="https://web.facebook.com/profile.php?id=100065456980825" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/migsarl2024" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/mutanda-ihemba-growing-sarl/about/?viewAsMember=true" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/migsarl2024/?igsh=cGl1cmpxemY1dmJ3" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Colonne pour les informations supplémentaires -->
+      <div class="col-md-6 info_col">
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p style="text-align: justify;">
+            Nous offrons une expertise polyvalente avec des solutions sur mesure, des innovations technologiques avancées, des formations de qualité, un engagement durable, et un accompagnement constant, pour vous aider à créer de la richesse et obtenir des résultats concrets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved By MUTANDA IHEMBA Growing Sarl</p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

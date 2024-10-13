@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="crypto, currency, wallet, security, trading" />
+  <meta name="description" content="Finexo - Your trusted partner in secure and efficient cryptocurrency trading." />
+  <meta name="author" content="Finexo Team" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="">
+
+  <title> service </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+
+</head>
+  <style>
+
+    /* Optionnel : effet survol */
+    h1:hover {
+      transform: scale(1.1); /* Agrandir légèrement au survol */
+      transition: transform 0.3s ease-in-out; /* Animation douce */
+    }
+
+</style>
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="{{ url_for('static', filename='images/a6.jpg') }}" alt="Hero Background">
+      </div>
+    </div>
+
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{{ url_for('home') }}">
+            <span>
+              MUTANDA IHEMBA Growing
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('home') }}">Accueil </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">À propos </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('service') }}">Service <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('why_us') }}">Pourquoi Nous Choisir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="slider_section ">
+          <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container ">
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <div class="detail-box">
+                        <h1>
+                          Nos Services
+                        </h1>
+                        <p style="text-align: justify;">
+                          Les technologies informatiques, l'encadrement professionnel, l'élevage et la commercialisation avicole. Nous mettons tout en œuvre pour répondre aux besoins de nos clients tout en contribuant au développement des communautés.
+                        </p>
+                        <div class="btn-box">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="img-box">
+                        <img src="static/images/a2.png" alt="Slider Image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Nos <span>Services</span>
+          </h2>
+          <p style="text-align: justify;">
+            Notre entreprise s'engage à offrir des solutions innovantes et de qualité dans trois domaines clés : les technologies informatiques, l'encadrement professionnel et l'élevage et la commercialisation avicole. Nous mettons tout en œuvre pour répondre aux besoins de nos clients tout en contribuant au développement des communautés.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="static/images/s4.png" alt="Currency Wallet">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Informatique et Technologies
+                </h5>
+                <p style="text-align: justify;">
+                  Obtenez des sites et applications web 100% responsive, conçus sur mesure à un coût abordable et selon vos préférences. Nous proposons le design élégant et les fonctionnalité optimales, en respectant les normes les plus strictes. Optimisez vos processus d'affaires grâce à nos solutions sur mesure en développement d'applications web...
+                </p>
+                <a href="{{ url_for('plus1') }}">
+                  Plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="static/images/s5.png" alt="Security Storage">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Encadrement et Formation Professionnelle
+                </h5>
+                <p style="text-align: justify;">
+                  offrez vous un encadrement complet "élèves et étudiants", ainsi que des formations professionnelles dans des secteurs clés du marché actuel. Faites partie de la main-d'œuvre qualifiée pour relever les défis économiques et technologiques d'aujourd'hui et de demain...
+                </p>
+                <a href="{{ url_for('plus2') }}">
+                  Plus
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="static/images/s6.png" alt="Expert Support">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Élevage et Commercialisation Avicole
+                </h5>
+                <p style="text-align: justify;">
+                  Spécialisés dans l’élevage et la commercialisation de poules de chair, poules pondeuses et œufs, nous garantissons des produits de qualité supérieure. Grâce à des pratiques agricoles durables et une gestion rigoureuse de nos élevages...
+                </p>
+                <a href="{{ url_for('plus3') }}">
+                  Plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="{{ url_for('allservice') }}">Tous nos services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+<!-- info section -->
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <!-- Colonne pour l'adresse et les informations de contact -->
+      <div class="col-md-6 info_col">
+        <div class="info_contact">
+          <h4>Adresse</h4>
+          <div class="contact_link_box">
+            <a href="https://www.google.com/maps/place/Kolwezi/@-10.7239231,25.4979801,13z/data=!3m1!4b1!4m6!3m5!1s0x1979e57971072e4f:0xa23ff3e3cd0d2277!8m2!3d-10.7275273!4d25.5088914!16zL20vMDR0Y2Zs?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwNS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Kolwezi, Lualaba, RDC</span>
+            </a>
+          </div>
+          <!-- Contact téléphonique et email -->
+          <div class="contact_link_box">
+            <a href="tel:+243816069861">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+243 81 60 69 861</span>
+            </a>
+            <a href="tel:+243995529657">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>+243 99 55 29 657</span>
+            </a>
+            <a href="mailto:lightmutanda@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>lightmutanda@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <!-- Réseaux sociaux -->
+        <div class="info_social">
+          <a href="https://web.facebook.com/profile.php?id=100065456980825" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/migsarl2024" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/mutanda-ihemba-growing-sarl/about/?viewAsMember=true" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/migsarl2024/?igsh=cGl1cmpxemY1dmJ3" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Colonne pour les informations supplémentaires -->
+      <div class="col-md-6 info_col">
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p style="text-align: justify;">
+            Nous offrons une expertise polyvalente avec des solutions sur mesure, des innovations technologiques avancées, des formations de qualité, un engagement durable, et un accompagnement constant, pour vous aider à créer de la richesse et obtenir des résultats concrets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved By MUTANDA IHEMBA Growing Sarl</p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
